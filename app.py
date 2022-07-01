@@ -46,16 +46,18 @@ def removedor_arquivos(diretorio):
         data_criacao = os.path.getctime(arquivos)
         data_criacao = datetime.fromtimestamp(data_criacao)
         novo = data_criacao + timedelta(days=+3)   
+        
         if data_criacao > novo:
-            #Escrever a lógica da exclusão dos arquivos aqui
             print(f'O arquivo {arquivos} foi excluído, pois tem mais de 3 dias desde a sua criação.')
             os.remove(arquivos)
         else:
             print(f'Este arquivo > {arquivos} < ainda não ultrapassou 3 dias desde de criação.')
 
+
 diretorio = input('Digite o nome/caminho do diretório que deseja realizar a automatização de backup: ')
-removedor_arquivos(diretorio)
 # listar_arquivos("backupsFrom")
+# removedor_arquivos(diretorio)
+
 
 
 
