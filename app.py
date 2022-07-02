@@ -29,8 +29,9 @@ def listar_arquivos(diretorio):
 
 
 def remover_arquivos(diretorio):
-    
     logger.add('removedFiles.log')
+    os.chdir(f'{diretorio}')
+    
     print('\n|----------------------------------------------------------|')
     print('|              INICIANDO REMOÇÃO DE ARQUIVOS               |')
     print('|----------------------------------------------------------|\n')
@@ -48,14 +49,16 @@ def remover_arquivos(diretorio):
             logger.error(f'\n {nome} ainda não ultrapassou 3 dias desde sua criação.\n')
 
 
+
 def copiar_arquivos(diretorio_padrao):
     diretorio_padrao = os.getcwd()
     backupsTo = os.path.join(diretorio_padrao,'backupsTo')
-    logger.add("backupsTo.log")
-    
     if not os.path.isdir(backupsTo):
         os.mkdir('backupsTo')
     
+    logger.add("backupsTo.log")
+    
+
     print('\n|----------------------------------------------------------|')
     print('|        INICIANDO CÓPIA DE ARQUIVOS PARA "backupsTo"      |')
     print('|----------------------------------------------------------|\n')
@@ -72,10 +75,13 @@ def copiar_arquivos(diretorio_padrao):
         else:
             logger.error(f'\n O arquivo {nome} deveria ter sido excluído anteriormente, já que passa de 3 dias.\n')
 
-    os.chdir('C:\home\\valcann')
+
 
 
 listar_arquivos('backupsFrom')
-remover_arquivos('backupsFrom')
-copiar_arquivos('valcann')
 
+remover_arquivos('backupsFrom')
+
+os.chdir('C:\home\\valcann')
+
+copiar_arquivos('valcann')
