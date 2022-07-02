@@ -4,17 +4,17 @@
 
 # Problema 1 | Automação de Ambientes Operacionais
 
-(OK)    Listar todos arquivos (nome, tamanho, data de criação, data da última modificação) localizados no
+--    Listar todos arquivos (nome, tamanho, data de criação, data da última modificação) localizados no
         caminho /home/valcann/backupsFrom; 
 
-(OK)    Salvar o resultado no arquivo backupsFrom.log em /home/valcann/;
+--    Salvar o resultado no arquivo backupsFrom.log em /home/valcann/;
         
-(OK)    Remover todos os arquivos com data de criação superior a 3 (três) dias; 
+--    Remover todos os arquivos com data de criação superior a 3 (três) dias; 
 
-(OK)    Copiar todos os arquivos os arquivos com data de criação menor ou igual a 3 (três) dias em
+--    Copiar todos os arquivos os arquivos com data de criação menor ou igual a 3 (três) dias em
         home/valcann/backupsTo;
 
-(OK)    Salvar o resultado no arquivo backupsTo.log em /home/valcann/.
+--    Salvar o resultado no arquivo backupsTo.log em /home/valcann/.
 
 ## Considerações sobre a elaboração da resolução da problemática:
 
