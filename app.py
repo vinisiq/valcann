@@ -30,22 +30,22 @@ def listar_arquivos(diretorio):
 
 def remover_arquivos(diretorio):
     
+    logger.add('removedFiles.log')
     print('\n|----------------------------------------------------------|')
     print('|              INICIANDO REMOÇÃO DE ARQUIVOS               |')
     print('|----------------------------------------------------------|\n')
 
     for arquivos in os.listdir():
-         nome = os.path.basename(arquivos)
-         data_criacao = os.path.getctime(arquivos)
-         data_criacao = datetime.fromtimestamp(data_criacao)
-         ultima_data = data_criacao + timedelta(days=+3) 
+        nome = os.path.basename(arquivos)
+        data_criacao = os.path.getctime(arquivos)
+        data_criacao = datetime.fromtimestamp(data_criacao)
+        ultima_data = data_criacao + timedelta(days=+3) 
 
-        
-         if ultima_data < datetime.today():
-             print(f'O arquivo {arquivos} foi excluído, pois tem mais de 3 dias desde a sua criação.\n')
-             os.remove(arquivos)
-         else:
-             print(f'Este arquivo > {arquivos} < ainda não ultrapassou 3 dias desde de criação.\n')
+        if ultima_data < datetime.today():
+            logger.info(f'\n O arquivo {nome} foi excluído, pois tem mais de 3 dias desde a sua criação.\n')
+            os.remove(arquivos)
+        else:
+            logger.error(f'\n {nome} ainda não ultrapassou 3 dias desde sua criação.\n')
 
 
 def copiar_arquivos(diretorio_padrao):
@@ -78,7 +78,4 @@ def copiar_arquivos(diretorio_padrao):
 listar_arquivos('backupsFrom')
 remover_arquivos('backupsFrom')
 copiar_arquivos('valcann')
-
-
-     
 

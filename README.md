@@ -42,7 +42,9 @@ praticidade com esta. Os módulos(bibliotecas) escolhidos para código foram:
 
     Ademais, a primeira estrutura a ser utilizada foi o "for", que faz um loop dentro de "backupsFrom" por meio do método os.listdir() trazendo "arquivo" como resultado para os dados dos arquivos da referida pasta. Para imprimir no terminal o resultado da listagem, foi utilizado o método logger.info('mensagem') para retornar o resultado tanto no terminal quanto grava-lo no arquivo backupsFrom.log.
 
+    Por fim, o método os.chdir() para retornar ao diretório inicial.
+
 #### Função remover_arquivos():
 
-    
+
 
