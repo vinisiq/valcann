@@ -28,7 +28,7 @@ Apesar de haver WSL2 Ubuntu 20.04 na minha máquina, optei pela utilização do 
 da solução, uma vez que tenho no Ubuntu algumas configurações para projetos que estão em andamento. Logo, 
 a indicação de divisão da árvore de diretórios(pastas) terá simbologia "\\" no código app.py.
 
-    Primeiramente, escolhi a linguagem Python, na versão 3.10.2, para solução da problemática, pois tenho mais
+Primeiramente, escolhi a linguagem Python, na versão 3.10.2, para solução da problemática, pois tenho mais
 praticidade com esta. Os módulos(bibliotecas) escolhidos para código foram:
 
     - os, módulo nativo do python para manipulação de arquivos e pastas;
