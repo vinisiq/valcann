@@ -93,35 +93,36 @@ Para um melhor aproveitamento da utilização do programa, recomendo que faça o
 
 ## Imagens do funcionamento do automatizador de ambientes:
 
-![image](https://user-images.githubusercontent.com/97056856/177018240-905532b2-729f-42ca-a1a2-19c767d26296.png)
 ###                                                 Função listar_arquivos
+![image](https://user-images.githubusercontent.com/97056856/177018240-905532b2-729f-42ca-a1a2-19c767d26296.png)
 
 
-![image](https://user-images.githubusercontent.com/97056856/177018247-c9198b43-9793-4e5f-9581-2a585036250c.png)
 ###                                                 Função remover_arquivos
+![image](https://user-images.githubusercontent.com/97056856/177018247-c9198b43-9793-4e5f-9581-2a585036250c.png)
 
 
-![image](https://user-images.githubusercontent.com/97056856/177018262-7e812871-fae6-4517-8249-1c86493175c0.png)
 ###                                                 Função copiar_arquivos
+![image](https://user-images.githubusercontent.com/97056856/177018262-7e812871-fae6-4517-8249-1c86493175c0.png)
 
 
-![image](https://user-images.githubusercontent.com/97056856/177018321-e6911fb7-99a4-482e-8f14-0ad4efeac134.png)
 ###                                    Estrutura das pastas logo após execução do app.py
+![image](https://user-images.githubusercontent.com/97056856/177018321-e6911fb7-99a4-482e-8f14-0ad4efeac134.png)
 
 
 OBS: A estrutura padrão das pastas é a que está no Finish code commit, no GitHub.
 
 
-![image](https://user-images.githubusercontent.com/97056856/177018460-a3f7c3dd-c3b4-4623-8068-f42a9e5600b6.png)
 ###                                                     backupsFrom.log
+![image](https://user-images.githubusercontent.com/97056856/177018460-a3f7c3dd-c3b4-4623-8068-f42a9e5600b6.png)
 
 
-![image](https://user-images.githubusercontent.com/97056856/177018412-8d909b32-a5cf-4742-9e58-53729b4b8536.png)
 ###                                                     removedFiles.log
+![image](https://user-images.githubusercontent.com/97056856/177018412-8d909b32-a5cf-4742-9e58-53729b4b8536.png)
 
 
-![image](https://user-images.githubusercontent.com/97056856/177018452-730abd4f-6cc7-4a37-918f-a30c3db26c52.png)
 ###                                                      backupsTo.log
+![image](https://user-images.githubusercontent.com/97056856/177018452-730abd4f-6cc7-4a37-918f-a30c3db26c52.png)
+
 
 
 
