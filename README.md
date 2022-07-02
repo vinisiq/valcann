@@ -40,27 +40,31 @@ praticidade com esta. Os módulos(bibliotecas) escolhidos para código foram:
 
 #### Função listar_arquivos():
 
-   A função listar_arquivos utiliza como parâmetro a indicação da pasta onde será listado os arquivos, neste caso, 
+A função listar_arquivos utiliza como parâmetro a indicação da pasta onde será listado os arquivos, neste caso, 
 a pasta 'backupsFrom'. No ínicio da função podemos ver a chamada do objeto "logger.add('backupsFrom.log')",que 
 cria ou atualiza o log (não duplica o log no caso da função ser chamada mais de uma vez). É necessário que o código 
 consiga chegar a pasta backupsFrom para poder fazer a listagem dos arquivos que ali estão, neste caso, foi utilizada
 a chamada do objeto os.chdir(diretorio). 
-   Ademais, a primeira estrutura a ser utilizada foi o "for", que faz um loop dentro de "backupsFrom" por meio do método
+
+Ademais, a primeira estrutura a ser utilizada foi o "for", que faz um loop dentro de "backupsFrom" por meio do método
 os.listdir() trazendo "arquivo" como resultado para os dados dos arquivos da referida pasta. Para imprimir no terminal
 o resultado da listagem, foi utilizado o método logger.info('mensagem') para retornar o resultado tanto no terminal quanto
 grava-lo no arquivo backupsFrom.log.
-   Por fim, o método os.chdir() para retornar ao diretório inicial.
+
+Por fim, o método os.chdir() para retornar ao diretório inicial.
 
 #### Função remover_arquivos():
 
-   Similiar ao que acontece na função de listar, aqui iniciamos a função adicionando um arquivo de log para identificar quais 
+Similiar ao que acontece na função de listar, aqui iniciamos a função adicionando um arquivo de log para identificar quais 
 arquivos foram removidos. Apesar disto não estar na proposta da problemática, achei interessante incluir, uma vez que através
 do logging do loguro conseguimos tanto imprimir no terminal o resultado quanto no arquivo removedFiles.log. Logo após, iniciamos
 um loop que retorna "arquivos" como resultado da busca em uma lista de arquivos da pasta, mesma ideia da outra função já apresen-
 tada. 
-   Além disso, dentro do loop temos variaveis que convertem a data de segundos para dias, horas e meses. A variável data_criacao 
+
+Além disso, dentro do loop temos variaveis que convertem a data de segundos para dias, horas e meses. A variável data_criacao 
 retorna a data em que o arquivo foi criado, já ultima_data retorna a data de criação do arquivo mais 3 dias. O condicional que é 
 realizado logo em seguinda utiliza a lógica dessas variáveis para remover os arquivos que têm data superior a 3 dias de criação.
-   Por conseguinte, o arquivo é removido e seu resultado é imprimido no terminal e também no arquivo removedFiles.log.
+
+Por conseguinte, o arquivo é removido e seu resultado é imprimido no terminal e também no arquivo removedFiles.log.
    
 #### Função copiar_arquivos():
