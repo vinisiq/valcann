@@ -1,8 +1,7 @@
 import os
 import time
 import shutil
-from datetime import timedelta
-from datetime import datetime
+from datetime import datetime, timedelta
 from loguru import logger
 
 
@@ -11,7 +10,6 @@ def listar_arquivos(diretorio):
     logger.add('backupsFrom.log')
 
     os.chdir(diretorio)
-
 
     print('\n|----------------------------------------------------------|')
     print('|              INICIANDO LISTAGEM DE ARQUIVOS              |')
@@ -29,7 +27,9 @@ def listar_arquivos(diretorio):
 
 
 def remover_arquivos(diretorio):
+    
     logger.add('removedFiles.log')
+   
     os.chdir(f'{diretorio}')
     
     print('\n|----------------------------------------------------------|')
@@ -52,7 +52,9 @@ def remover_arquivos(diretorio):
 
 def copiar_arquivos(diretorio_padrao):
     diretorio_padrao = os.getcwd()
+    
     backupsTo = os.path.join(diretorio_padrao,'backupsTo')
+    
     if not os.path.isdir(backupsTo):
         os.mkdir('backupsTo')
     
